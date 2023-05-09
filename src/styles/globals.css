@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,4 +28,35 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.move-right {
+  animation: moveRight 10s linear infinite;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes bgMoveRight {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: -100rem 0px;
+  }
+}
+
+.mapa{
+  background: url("/map.svg");
+  background-color: transparent;
+  background-size: 100rem 50rem;
+  background-repeat: repeat-x;
+  background-position: initial;
+  animation: bgMoveRight 10s linear infinite;
 }
