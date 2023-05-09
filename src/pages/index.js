@@ -74,10 +74,10 @@ export default function Home() {
               Socios
             </h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full h-auto place-items-center px-8 py-20">
-              <div className="w-80 h-80 text-center lg:text-left bg-licex-blue dark:bg-licexdark-steel shadow-md shadow-licex-gray grid place-items-center">
+              <div className="w-80 h-80 text-center lg:text-left bg-white dark:bg-licexdark-steel shadow-md shadow-licex-gray grid place-items-center">
                 <img src="https://american-tasaciones.com.pe/wp-content/uploads/2019/06/73-VILLAS-OQUENDO-1.png"></img>
               </div>
-              <div className="w-80 h-80 text-center lg:text-left bg-licex-blue dark:bg-licexdark-steel shadow-md shadow-licex-gray grid place-items-center">
+              <div className="w-80 h-80 text-center lg:text-left bg-white dark:bg-licexdark-steel shadow-md shadow-licex-gray grid place-items-center">
                 <img src="https://american-tasaciones.com.pe/wp-content/uploads/2019/06/73-VILLAS-OQUENDO-1.png"></img>
               </div>
             </div>
