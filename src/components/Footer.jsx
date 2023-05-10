@@ -23,10 +23,10 @@ export default function Footer( props ) {
                             <h1>Dirección: </h1>
                         </div>
                         <div className="text-left">
-                            <h1>(+51) 990547777</h1>
-                            <h1>20538796914</h1>
-                            <h1>gerencia.licex@gmail.com</h1>
-                            <h1>asdasdasdasdas</h1>
+                            <h1>(+51) XXXXXXXXX</h1>
+                            <h1>XXXXXXXXXXX</h1>
+                            <h1>XXXXXXXXXXXX@XXXXX.XXX</h1>
+                            <h1>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</h1>
                         </div>
                     </div>
                 </div>

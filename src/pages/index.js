@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 
 import MaxWidthContainer from "@src/components/containers/maxwidthcontainer"
 import Navbar from "@src/components/containers/Navbar"
@@ -5,24 +6,32 @@ import Hero from "@src/components/containers/Hero"
 import Card from "@src/components/containers/Card"
 import Footer from "@src/components/Footer"
 
+const title = "Bienvenido a LICEX Perú"
+
 
 export default function Home() {
+
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
+
   return (
     <main className="flex min-h-screen min-w-full flex-col items-center justify-between
                    bg-white dark:bg-licexdark-darkblue text-licex-gray dark:text-licexdark-steel font-Poppins">
+      <link rel="shortcut icon" href="/LOGO-LICEX-Favicon.png" />
       <header className="w-full sticky top-0 z-50">
         <div className="relative">
           <Navbar/>
         </div> 
       </header>
-      <div className="w-full min-h-min 
+      <div id="Main" className="w-full min-h-min 
                       bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] 
                       from-licexlight-lightblue via-white  to-white 
                       dark:from-licexdark-lightblue dark:via-licexdark-darkblue  dark:to-licexdark-darkblue
                       m-0">
         <Hero/>
       </div>
-      <div className="bg-licexdark-steel dark:bg-licexdark-lightblue 
+      <div id="QuienesSomos" className="bg-licexdark-steel dark:bg-licexdark-lightblue 
                       w-full h-full m-0 py-20">
         <MaxWidthContainer item={
         <>
@@ -50,7 +59,7 @@ export default function Home() {
         </>
         }/>
       </div>
-      <div className="bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] 
+      <div id="Servicios" className="bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] 
                       from-licexlight-lightblue via-white  to-white 
                       dark:from-licexdark-lightblue dark:via-licexdark-darkblue  dark:to-licexdark-darkblue
                     w-full h-full m-0 py-20 ">
@@ -67,11 +76,11 @@ export default function Home() {
           </>
         }/>
       </div>
-      <div className="bg-licexdark-steel dark:bg-licexdark-lightblue w-full h-full m-0 py-20">
+      <div id="Socios" className="bg-licexdark-steel dark:bg-licexdark-lightblue w-full h-full m-0 py-20">
         <MaxWidthContainer item={
           <>
             <h1 className="text-center lg:text-right w-full px-16 text-3xl">
-              Socios
+              Nuestros Socios
             </h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full h-auto place-items-center px-8 py-20">
               <div className="w-80 h-80 text-center lg:text-left bg-white dark:bg-licexdark-steel shadow-md shadow-licex-gray grid place-items-center">
