@@ -25,8 +25,8 @@ export default function Footer( props ) {
                         <div className="text-left">
                             <h1>(+51) XXXXXXXXX</h1>
                             <h1>XXXXXXXXXXX</h1>
-                            <h1>XXXXXXXXXXXX@XXXXX.XXX</h1>
-                            <h1>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</h1>
+                            <h1>XXXXX@XXXXX.XXX</h1>
+                            <h1>XXXXXXXXXXXX</h1>
                         </div>
                     </div>
                 </div>
